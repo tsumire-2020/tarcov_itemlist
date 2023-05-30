@@ -1,7 +1,6 @@
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +34,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.select-tab {
+  display: flex;
+  background-color: aqua;
+}
+
+.tab-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.tab-list li {
+  flex: 1;
 }

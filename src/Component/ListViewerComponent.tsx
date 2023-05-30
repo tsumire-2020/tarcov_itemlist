@@ -4,7 +4,15 @@ const ListViewerComponent: React.FC = () => {
   return (
     <div>
       {/* コンポーネントの内容をここに記述 */}
-      check
+      <div>
+        hideout
+      </div>
+      <div>
+        trader
+      </div>
+      <div>
+        free-market
+      </div>
     </div>
   );
 };

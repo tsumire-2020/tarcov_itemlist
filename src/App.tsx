@@ -29,27 +29,31 @@ const App: React.FC<{}> = () => {
         </a>
       </header>
       <body>
-        <div>
+        <div>        
+          <div className='select-tab'>
           {/* タブの表示 */}
-          <ul>
+          <ul className="tab-list">
             <li
               onClick={() => handleTabChange(0)}
               className={activeTab === 0 ? 'active' : ''}
+              style={{flex:'1'}}
             >
-              Tab 1
+              View List
             </li>
             <li
               onClick={() => handleTabChange(1)}
               className={activeTab === 1 ? 'active' : ''}
+              style={{flex:'1'}}
             >
-              Tab 2
+              List Setting
             </li>
           </ul>
-
+          </div>
           {/* 選択されたタブのコンポーネントを表示 */}
           {activeTab === 0 && <ListSettingComponent />}
           {activeTab === 1 && <ListViewerComponent />}
-        </div>
+      </div>
+
       </body>
     </div>
   );
